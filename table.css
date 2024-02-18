@@ -1,0 +1,40 @@
+/* Tabela  */ 
+#ListaCadastro{
+    background-color: #ffffff ;
+    height: auto;
+   padding-top: 50px;
+   padding-bottom: 90px;
+  }
+  #ListaCadastro h1{
+  font-size: 37px;
+  color: #29abe2;
+  margin-bottom: 70px;
+  }
+  .tabela{
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 830px;
+  }
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+  }
+  td,th {
+    height: 30px;
+    width: 22%;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #29abe2;
+  }
+  th{
+    text-transform: uppercase;
+    color: #012d51;
+  }
+.item-num{
+    width: 7vh!important;
+}

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* TEXTOS*/ 
+@font-face {
+    font-family: [nome];
+    src: local([nome da fonte local]), url([caminho]);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: local(Helvetica),   url("https://db.onlinewebfonts.com/t/81d87eba2f25b790803c324963f02063.ttf")format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+    font-family: Helvetica, Helvetica 25 Ultra light ,  sans-serif;
+    font-size: 95px;
+}
+
+h2{
+  color: #ffffff;
+  margin: 0;
+  font-size: 37px;
+}
+
+  /* Menu superior*/
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: auto;
+    padding: 30px; /* Adicionado um pequeno preenchimento lateral para afastar da borda */
+    max-width: 800px; /* Limita a largura máxima */
+}
+
+  .logo{
+    background-color: transparent;
+       
+  }
+  .nav-menu{
+    background-color: transparent;
+
+  }
+    .nav-menu ul {
+      margin-left: 60px;
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-menu li {
+    margin-right: 10px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .nav-menu a:hover {
+    border-bottom: 0.7px solid rgb(255, 255, 255);
+  
+ }
+ .nav-menu ul li:not(:last-child)::after {
+  content: "\25CF"; /* Código Unicode para o caractere de disco */
+  color: #ffffff;
+  margin-left: 15px;
+}
+ .inicio{
+  margin: 0;
+  width: 100%;
+  background-image: url(images/index-image.jpg);
+  background-color: #fff;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:bottom;
+ }
+
+.inicio-div{
+  text-transform: uppercase;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+   width: 800px;
+   height: 620px;
+
+}
+.inicio-texto{
+
+  margin-bottom: 200px;
+  width: 50%;
+
+  
+}
+.inicio-texto p,h1{
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  background-image: url(images/rodape-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  color: #fff;
+  margin: auto;
+}
+
+.footer-text{
+  margin: auto;
+}
+
+.header-mob{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.logo-mob{
+  float: right;
+} 
+@media screen and (max-width:964px){
+  .header{
+      display: none;
+  }
+ 
+}
+
+@media screen and (min-width:964px) {
+  .header-mob{
+      display: none;
+  } 
+}
