@@ -32,51 +32,8 @@ h2{
   font-size: 37px;
 }
 
-  /* Menu superior*/
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    margin: auto;
-    padding: 30px; /* Adicionado um pequeno preenchimento lateral para afastar da borda */
-    max-width: 800px; /* Limita a largura máxima */
-}
-
-  .logo{
-    background-color: transparent;
-       
-  }
-  .nav-menu{
-    background-color: transparent;
-
-  }
-    .nav-menu ul {
-      margin-left: 60px;
-    list-style:none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .nav-menu li {
-    margin-right: 10px;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .nav-menu a:hover {
-    border-bottom: 0.7px solid rgb(255, 255, 255);
-  
- }
- .nav-menu ul li:not(:last-child)::after {
-  content: "\25CF"; /* Código Unicode para o caractere de disco */
-  color: #ffffff;
-  margin-left: 15px;
-}
+  /* Div inicio*/
+ 
  .inicio{
   margin: 0;
   width: 100%;
@@ -85,33 +42,31 @@ h2{
   background-size:cover;
   background-repeat: no-repeat;
   background-position:bottom;
+  height: 750px;
  }
 
-.inicio-div{
+ .inicio-div {
   text-transform: uppercase;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content:left;
-   width: 800px;
-   height: 620px;
+  margin: auto;
+  height: auto;
+  align-items: center!important;
+  justify-content: left;
+  max-width: 800px; 
 
+ }
+.inicio-texto {
+  margin-top: 130px;
 }
-.inicio-texto{
 
-  margin-bottom: 200px;
-  width: 50%;
-
-  
-}
 .inicio-texto p,h1{
   margin: 0;
 }
 
+  /* Footer*/
 footer {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   background-image: url(images/rodape-desktop.jpg);
   background-size: cover;
@@ -120,29 +75,7 @@ footer {
   color: #fff;
   margin: auto;
 }
-
 .footer-text{
   margin: auto;
 }
 
-.header-mob{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-}
-.logo-mob{
-  float: right;
-} 
-@media screen and (max-width:964px){
-  .header{
-      display: none;
-  }
- 
-}
-
-@media screen and (min-width:964px) {
-  .header-mob{
-      display: none;
-  } 
-}

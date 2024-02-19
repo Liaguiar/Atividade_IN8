@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de Informação em Tabela</title>
+    <style>
+        .table-mobile {
+            text-align: center;
+            margin: auto;
+            background-color: #ffffff;
+            max-width: 400px;
+            
+        }
+
+        .table-mobile table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid #29abe2;
+        }
+
+        .table-mobile th,
+        td {
+
+            border-bottom: 0.1px solid #29abe2;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-mobile th {
+            background-color: #ffffff;
+            color: #012d51;
+
+            
+        }
+
+        .table-mobile td {
+            color: #808080;
+           
+        }
+
+        .table-buttons button {
+            cursor: pointer;
+            background-color: transparent;
+            color: #808080;
+            border-bottom: 0!important;
+            border: 2px solid #808080;
+            width: 24%;
+            padding: 10px;
+            margin-bottom: -1px;
+        }
+        
+        .table-buttons button:focus {
+            color: #29abe2;
+            border: 2px solid #29abe2;
+        }
+
+        .table-buttons {
+            width: 100%;
+            justify-content: space-between;
+            background-color: transparent;
+            margin: 0;
+        }
+    </style>
+</head>
+<div class="table-mobile">
+    <div class="table-buttons">
+            <button onclick="carregarInformacao(1)">01</button>
+            <button onclick="carregarInformacao(2)">02</button>
+            <button onclick="carregarInformacao(3)">03</button>
+            <button onclick="carregarInformacao(4)">04</button>
+    </div>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <td id="nome"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td id="email"></td>
+            </tr>
+            <tr>
+                <th>Nascimento</th>
+                <td id="nascimento"></td>
+            </tr>
+            <tr>
+                <th>Telefone</th>
+                <td id="telefone"></td>
+            </tr>
+        </table>
+</div>
+<script>
+    function carregarInformacao(info) {
+        var infos = {
+            1: { nome: "Nome 01", email: "email01@example.com", nascimento: "01/01/2000", telefone: "(123) 456-7890" },
+            2: { nome: "Nome 02", email: "email02@example.com", nascimento: "02/02/2000", telefone: "(123) 456-7890" },
+            3: { nome: "Nome 03", email: "email03@example.com", nascimento: "03/03/2000", telefone: "(123) 456-7890" },
+            4: { nome: "Nome 04", email: "email04@example.com", nascimento: "04/04/2000", telefone: "(123) 456-7890" }
+        };
+
+        var selectedInfo = infos[info];
+
+        document.getElementById("nome").textContent = selectedInfo.nome;
+        document.getElementById("email").textContent = selectedInfo.email;
+        document.getElementById("nascimento").textContent = selectedInfo.nascimento;
+        document.getElementById("telefone").textContent = selectedInfo.telefone;
+    }
+
+    carregarInformacao(1);
+</script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-/* Tabela  */ 
+/* Tabela  destop */ 
 #ListaCadastro{
     background-color: #ffffff ;
     height: auto;
@@ -10,31 +10,104 @@
   color: #29abe2;
   margin-bottom: 70px;
   }
-  .tabela{
+  .table {
     text-align: center;
     display: block;
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 830px;
+    max-width: 830px;
   }
-  table {
+  .table table {
     margin: auto;
     border-collapse: collapse;
     border-style: hidden;
     width: 100%;
   }
-  td,th {
+  .table  td,th {
     height: 30px;
     width: 22%;
     padding: 8px;
     text-align: center;
     border: 1px solid #29abe2;
   }
-  th{
+  .table  th{
     text-transform: uppercase;
     color: #012d51;
   }
-.item-num{
+  .table  .item-num{
     width: 7vh!important;
+}
+
+/* Tabela  mobile */ 
+.table-mobile {
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  max-width: 400px;
+  
+}
+
+.table-mobile table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #29abe2;
+}
+
+.table-mobile th,
+td {
+
+  border-bottom: 0.1px solid #29abe2;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-mobile th {
+  background-color: #ffffff;
+  color: #012d51;
+}
+
+.table-mobile td {
+  color: #808080;
+}
+
+.table-buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #808080;
+  border-bottom: 0!important;
+  border: 2px solid #808080;
+  width: 24%;
+  padding: 10px;
+  margin-bottom: -1px;
+}
+
+.table-buttons button:focus {
+  color: #29abe2;
+  border: 2px solid #29abe2;
+}
+
+.table-buttons {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px!important;
+  width: 100%;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 0;
+}
+
+
+@media only screen and (max-device-width: 664px){
+  .table{
+      display: none;
+  }
+  #ListaCadastro h1 {
+    margin-bottom: 10px;
+}
+}
+
+@media only screen and (min-device-width: 665px) {
+  .table-mobile{
+      display: none;
+  } 
 }
