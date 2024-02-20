@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
-    <link
-        href="https://db.onlinewebfonts.com/c/81d87eba2f25b790803c324963f02063?family=Helvetica+Neue+LT+Com+25+Ultra+Light"
-        rel="stylesheet">
     <link rel="stylesheet" href="formulario.css">
     <link rel="stylesheet" href="table.css">
     <link rel="stylesheet" href="menu.css">
-    <script> src="tabela.js"</script>
+    <link
+        href="https://db.onlinewebfonts.com/c/58f48c4bf8c496b9d6141eca7af799be?family=Helvetica+Neue+LT+Pro+25+Ultra+Light"
+        rel="stylesheet">
+    <script defer src="tabela.js"> </script>
 </head>
 
 <body>
@@ -94,18 +94,34 @@
                 <div class="hamburguer">
                     <input id="menu-toggle" type="checkbox" />
                     <label class="menu-btn" for="menu-toggle">
-                        <svg height="30px" color xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 70"><defs><style>.cls-1{fill: #29abe2;}</style></defs><title>hamburguer0</title><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M77,10H5A5,5,0,0,1,5,0H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,40H5A5,5,0,0,1,5,30H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,70H5A5,5,0,0,1,5,60H77a5,5,0,0,1,0,10Z"/></g></g></svg>
-                        
+                        <svg height="30px" color xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 70">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #29abe2;
+                                    }
+                                </style>
+                            </defs>
+                            <title>hamburguer0</title>
+                            <g id="Camada_2" data-name="Camada 2">
+                                <g id="Camada_1-2" data-name="Camada 1">
+                                    <path class="cls-1" d="M77,10H5A5,5,0,0,1,5,0H77a5,5,0,0,1,0,10Z" />
+                                    <path class="cls-1" d="M77,40H5A5,5,0,0,1,5,30H77a5,5,0,0,1,0,10Z" />
+                                    <path class="cls-1" d="M77,70H5A5,5,0,0,1,5,60H77a5,5,0,0,1,0,10Z" />
+                                </g>
+                            </g>
+                        </svg>
+
                         </svg>
                     </label>
-            
+
                     <ul class="menu-box">
                         <li><a href="#ListaCadastro">lista</a></li>
                         <li><a href="#">sobre mim</a></li>
                         <li><a href="#formulario">cadastro</a></li>
                     </ul>
                 </div>
-                   
+
                 <div class="logo-mob">
                     <svg height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.56 40">
                         <defs>
@@ -181,7 +197,7 @@
     </section>
     <section id="formulario">
         <div class="forms">
-            <form action="#" method="post">
+            <form id="cadastroForm" action="#" method="post">
                 <h1>Cadastro</h1>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -189,13 +205,13 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="nascimento">Data de Nascimento:</label>
+                <label for="nascimento">Nascimento:</label>
                 <input type="date" id="nascimento" name="nascimento" required>
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}">
 
-                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="armazenarCadastro()">Cadastrar</button>
             </form>
         </div>
     </section>
@@ -212,31 +228,31 @@
                 </tr>
                 <tr>
                     <td class="item-num">1</td>
-                    <td>Fulano Beltrano de Oliveira da Silva</td>
-                    <td>fulanobos@gmail.com</td>
-                    <td>Nascimento</td>
-                    <td>(31) 9 9666-1111</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td class="item-num">2</td>
-                    <td>Nome</td>
-                    <td>E-mail</td>
-                    <td>Nascimento</td>
-                    <td>Telefone</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td class="item-num">3</td>
-                    <td>Nome</td>
-                    <td>E-mail</td>
-                    <td>Nascimento</td>
-                    <td>Telefone</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td class="item-num">4</td>
-                    <td>Nome</td>
-                    <td>E-mail</td>
-                    <td>Nascimento</td>
-                    <td>Telefone</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
         </div>
@@ -244,29 +260,29 @@
         <div class="table-mobile">
             <h1>Lista de Cadastro</h1>
             <div class="table-buttons">
-                    <button onclick="carregarInformacao(1)">01</button>
-                    <button onclick="carregarInformacao(2)">02</button>
-                    <button onclick="carregarInformacao(3)">03</button>
-                    <button onclick="carregarInformacao(4)">04</button>
+                <button onclick="carregarInformacao(1)">01</button>
+                <button onclick="carregarInformacao(2)">02</button>
+                <button onclick="carregarInformacao(3)">03</button>
+                <button onclick="carregarInformacao(4)">04</button>
             </div>
-                <table>
-                    <tr>
-                        <th>Nome</th>
-                        <td id="nome"></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td id="email"></td>
-                    </tr>
-                    <tr>
-                        <th>Nascimento</th>
-                        <td id="nascimento"></td>
-                    </tr>
-                    <tr>
-                        <th>Telefone</th>
-                        <td id="telefone"></td>
-                    </tr>
-                </table>
+            <table id="table-mobile">
+                <tr>
+                    <th>Nome</th>
+                    <td id="nome"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <th>Nascimento</th>
+                    <td id="nascimento"></td>
+                </tr>
+                <tr>
+                    <th>Telefone</th>
+                    <td id="telefone"></td>
+                </tr>
+            </table>
         </div>
     </section>
     <footer>

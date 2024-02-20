@@ -1,81 +1,117 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 
-/* TEXTOS*/ 
+/* TEXTOS*/
 @font-face {
-    font-family: [nome];
-    src: local([nome da fonte local]), url([caminho]);
+  font-family: 'Helvetica 25 Ultra Light';
+  src: url('Fonts/HelveticaUltraLt_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: local(Helvetica),   url("https://db.onlinewebfonts.com/t/81d87eba2f25b790803c324963f02063.ttf")format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
+  font-family: "Helvetica Neue 25 Ultra Light";
+  src: url("https://db.onlinewebfonts.com/t/0a15436e7f3ebb9c3312a1ae3d4d9c19.svg#Helvetica Neue 25 Ultra Light")format("svg");
+}
 
 h1 {
   color: #ffffff;
   text-transform: uppercase;
-    font-family: Helvetica, Helvetica 25 Ultra light ,  sans-serif;
-    font-size: 95px;
+  font-family: "Helvetica Neue LT Pro 25 Ultra Light", sans-serif !important;
+  font-size: 95px;
+  font-weight: 100 !important;
 }
 
-h2{
+h2 {
+  font-family: "Helvetica Neue LT Pro 25 Ultra Light", sans-serif !important;
   color: #ffffff;
   margin: 0;
   font-size: 37px;
+  font-weight: 100 !important;
 }
 
-  /* Div inicio*/
- 
- .inicio{
+/* Div inicio*/
+
+.inicio {
   margin: 0;
   width: 100%;
-  background-image: url(images/index-image.jpg);
   background-color: #fff;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:bottom;
+  background-position: bottom;
   height: 750px;
- }
+}
 
- .inicio-div {
+.inicio-div {
   text-transform: uppercase;
   margin: auto;
   height: auto;
-  align-items: center!important;
+  align-items: center !important;
   justify-content: left;
-  max-width: 800px; 
+  max-width: 800px;
 
- }
-.inicio-texto {
-  margin-top: 130px;
 }
 
-.inicio-texto p,h1{
+.inicio-texto p,
+h1 {
   margin: 0;
 }
 
-  /* Footer*/
+/* Footer*/
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(images/rodape-desktop.jpg);
   background-size: cover;
   background-position: center;
   height: 35vh;
   color: #fff;
   margin: auto;
 }
-.footer-text{
+
+.footer-text {
   margin: auto;
 }
 
+
+
+@media only screen and (max-device-width: 664px) {
+  footer {
+    background-image: url(images/rodape-mobile.jpg);
+
+  }
+
+  .inicio-texto {
+    margin-left: 8px;
+    margin-top: 50px;
+
+  }
+
+  .inicio {
+    background-image: url(images/index-image-mobile.jpg);
+    font-size: 13px;
+
+  }
+
+}
+
+@media only screen and (min-device-width: 665px) {
+  footer {
+    background-image: url(images/rodape-desktop.jpg);
+
+  }
+
+  .inicio-texto {
+    margin-top: 130px;
+
+  }
+
+  .inicio {
+    background-image: url(images/index-image.jpg);
+  }
+}

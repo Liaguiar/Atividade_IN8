@@ -1,51 +1,65 @@
-/* Tabela  destop */ 
-#ListaCadastro{
-    background-color: #ffffff ;
-    height: auto;
-   padding-top: 50px;
-   padding-bottom: 90px;
-  }
-  #ListaCadastro h1{
+/* Tabela  destop */
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('Fonts/HelveticaUltraLt_0.ttf') format('truetype');
+}
+
+
+#ListaCadastro {
+  background-color: #ffffff;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+#ListaCadastro h1 {
   font-size: 37px;
   color: #29abe2;
   margin-bottom: 70px;
-  }
-  .table {
-    text-align: center;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    max-width: 830px;
-  }
-  .table table {
-    margin: auto;
-    border-collapse: collapse;
-    border-style: hidden;
-    width: 100%;
-  }
-  .table  td,th {
-    height: 30px;
-    width: 22%;
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #29abe2;
-  }
-  .table  th{
-    text-transform: uppercase;
-    color: #012d51;
-  }
-  .table  .item-num{
-    width: 7vh!important;
 }
 
-/* Tabela  mobile */ 
+.table {
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 830px;
+}
+
+.table table {
+  margin: auto;
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+}
+
+.table td,
+th {
+  height: 30px;
+  width: 22%;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #29abe2;
+}
+
+.table th {
+  text-transform: uppercase;
+  color: #012d51;
+}
+
+.table .item-num {
+  width: 7vh !important;
+}
+
+/* Tabela  mobile */
 .table-mobile {
   text-align: center;
   margin: auto;
   background-color: #ffffff;
   max-width: 400px;
-  
+
 }
 
 .table-mobile table {
@@ -75,7 +89,7 @@ td {
   cursor: pointer;
   background-color: transparent;
   color: #808080;
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
   border: 2px solid #808080;
   width: 24%;
   padding: 10px;
@@ -89,7 +103,7 @@ td {
 
 .table-buttons {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16px!important;
+  font-size: 16px !important;
   width: 100%;
   justify-content: space-between;
   background-color: transparent;
@@ -97,17 +111,18 @@ td {
 }
 
 
-@media only screen and (max-device-width: 664px){
-  .table{
-      display: none;
+@media only screen and (max-device-width: 664px) {
+  .table {
+    display: none;
   }
+
   #ListaCadastro h1 {
     margin-bottom: 10px;
-}
+  }
 }
 
 @media only screen and (min-device-width: 665px) {
-  .table-mobile{
-      display: none;
-  } 
+  .table-mobile {
+    display: none;
+  }
 }
